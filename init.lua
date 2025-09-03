@@ -120,6 +120,14 @@ end)
 
 -- Enable break indent
 vim.o.breakindent = true
+-- Show existing tab characters as 2 spaces wide
+vim.opt.tabstop = 2
+-- Use 2 spaces when shifting indentation (>> or <<)
+vim.opt.shiftwidth = 2
+-- Tab key inserts 2 spaces; backspace removes up to 2 spaces
+vim.opt.softtabstop = 2
+-- Convert tabs to spaces (no hard tab characters written)
+vim.opt.expandtab = true
 
 -- Save undo history
 vim.o.undofile = true
